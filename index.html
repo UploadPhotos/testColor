@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+        <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+        <meta HTTP-EQUIV="expires" CONTENT="0">
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="pragram" content="no-cache" />
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<title>测测你的CBRE专属色</title>
+		<script type="text/javascript">  
+		  var phoneWidth = parseInt(window.screen.width);  
+		  var phoneScale = phoneWidth / 640;  
+		  var ua = navigator.userAgent;  
+		  if (/Android (\d+\.\d+)/.test(ua)) {  
+			var version = parseFloat(RegExp.$1);  
+			if (version > 2.3) {  
+			  document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi"/>');  
+			} else {  
+			  document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi"/>');  
+			}  
+		  } else {  
+			document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi"/>');  
+		  }   
+	//	document.write('<link  rel="stylesheet" type="text/css" href="./assets/css/app.css?v='+Math.random()+' "/>');  		  
+		</script>
+		<link  rel="stylesheet" type="text/css" href="assets/css/animate.css?v=1"/>
+		<link  rel="stylesheet" type="text/css" href="assets/css/common.css?v=1"/>
+		<link  rel="stylesheet" type="text/css" href="assets/css/app.css?v=47.61111111"/>
+
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="load" id="load">
+				<div class="load_box">
+					<div class="load_title">
+						<div class="load_title2_box">
+							<div class="load_title2"></div>
+						</div>
+						
+					</div>
+					
+					<div class="load_text" id="percent">加载中...</div>
+				
+				</div>
+			</div>
+			
+			<div class="main" id="main" style="display:none;">
+
+				<div class="zpage zpage1" data-index="page1" style="display:none">
+					<div class="p1_bg"></div>
+					<canvas id="grid" class="myc"></canvas>
+					<div class="p1_head an-voice">
+						<div class="p1_guan_box2">
+						</div>
+						<div class="p1_line1"></div>
+						<div class="p1_line2"></div>
+						<div class="p1_line3"></div>
+						<div class="p1_line4"></div>
+						<div class="p1_guan_box1">	
+						</div>
+						
+					</div>
+					<div class="p1_foot"></div>
+
+					<div class="ch" style="display:none;">
+						<div class="p1_title"></div>
+						<div class="p1_title2 animated zoomIn yc1200" >
+							
+						</div>
+					
+						<div class="p1_btn1 animated zoomIn yc1800" onclick="p2()">进入测试</div>
+					</div>
+					<div class="en" style="display:none;">
+						<div class="p1_title_en"></div>
+						<div class="p1_title2_en animated zoomIn yc1200" style="top: 60%;">
+	
+						</div>
+						<div class="p1_btn1 animated zoomIn yc1800" style="top: 83%;" onclick="p2()">Start</div>
+					</div>
+					<div id="music" style="display:none; ">
+						<div class="music plays"><div class="music_on moves"></div></div>
+						<span>开启</span>
+					
+					</div>
+				</div>
+				<div class="zpage zpage2" data-index="page2" style="display:none">
+					<div class="p2_head">
+						<div class="p1_guan small animated2 flash2" style="position: absolute;left:424px;top:64px;opacity:1;"></div>
+						<div class="p1_guan big animated2 flash2" style="position: absolute;left:40px;top:150px;opacity:1;"></div>
+						<div class="p1_guan small animated2 flash2 infinite yc400" style="position:absolute;left:348px;top:134px;opacity:1;"></div>
+						<div class="p1_guan big animated2 flash2 infinite yc800" style="position: absolute;left:354px;top:50px;opacity:1;"></div>
+						<div class="p1_guan middle animated2 flash2 infinite" style="position: absolute;left:108px;top:60px;opacity:1;"></div>
+						<div class="p1_guan big animated2 flash2 infinite yc100" style="position: absolute;left:208px;top:194px;opacity:1; "></div>
+						<div class="p1_guan small animated2 flash2 infinite" style="position: absolute;left:248px;top:50px;opacity:1;"></div>
+						<div class="p1_guan big animated2 flash2 infinite yc2000" style="position: absolute;left:548px;top:164px;opacity:1;"></div>
+						<div class="p1_guan middle animated2 flash2 infinite yc300" style="position: absolute;left:388px;top:184px;opacity:1;"></div>
+						<div class="p1_guan middle animated2 flash2 infinite yc800" style="position: absolute;left:228px;top:134px;opacity:1;"></div>
+						<div class="p1_guan small animated2 flash2 infinite yc200" style="position: absolute;left:28px;top:14px;opacity:1; "></div>
+						<div class="p1_guan big animated pulse infinite" style="position: absolute;left:328px;top:234px;opacity:1;"></div>
+						<div class="p1_guan big qq_move " style="position: absolute;left:206px;top:100px;"></div>
+					</div>
+					<div class="p2_foot"></div>
+					<div class="p2_body">
+						<div class="p2_bum_box">
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_m"></div>
+							<div class="p2_text v-num"></div>
+
+						</div>
+						<div class="p2_box v-q">
+							<!--<div class="p2_title">下面四张图片，你最喜欢哪一张？下面四张图片，你最喜欢哪一张？下面四张图片，你最喜欢哪一张？下面四张图片，你最喜欢哪一张？下面四张图片，你最喜欢哪一张？</div>
+							<ul class="p2_img_box" style="display:none;">
+								<li class="active">
+									<p>A</p>
+									<div class="img_box">
+										<img src="./assets/images/lag_box.png?v=12">
+									</div>
+								</li>
+								<li>
+									<p>A</p>
+									<div class="img_box">
+										<img src="./assets/images/lag_box.png?v=12">
+									</div>
+								</li>
+								<li>
+									<p>A</p>
+									<div class="img_box">
+										<img src="./assets/images/lag_box.png?v=12">
+									</div>
+								</li>
+								<li>
+									<p>A</p>
+									<div class="img_box">
+										<img src="./assets/images/lag_box.png?v=12">
+									</div>
+								</li>
+							</ul>
+						
+							<ul class="p2_text_box">
+							 	
+							        
+					            <li >
+									<span><i>A</i></span>
+									<p style="line-height:90px;">下面四张图片，你最喜欢哪一张？</p>
+								</li>
+								<li >
+									<span><i>A</i></span>
+									<p>下面四张图片，你最喜欢哪一张？下面四张图片，你最喜欢哪一张？</p>
+								</li>
+								<li >
+									<span><i>A</i></span>
+									<p>下面四张图片，你最喜欢哪一张？下面四张图片，你最喜欢哪一张？下面四张图片，你最喜欢哪一张？下面四张图片，你最喜欢哪一张？</p>
+								</li>
+								
+								
+							</ul>-->
+						</div>
+					</div>
+
+				</div>
+				<div class="zpage zpage3" data-index="page3" style="display:none;overflow: scroll;    -webkit-overflow-scrolling:touch;">
+					<div class="p3_bg"></div>
+					<div style=" position: absolute;top: 0; left: 0;width: 100%; height: 100%;"><img src="assets/images/p3_1.jpg?v=12" class="v-img" style="min-height:100%;width: 100%;"></div>
+					
+				
+					<div class="ch" style="display:none;">
+						<div class="p3_text1 animated zoomIn" ><img src="assets/images/p3_res1.png?v=12" class="v-title"></div>
+						<div class="p3_save animated zoomIn"></div>
+						<div class="jdt"></div>
+					</div>
+					<div class="en" style="display:none;">
+						<div class="p3_text1 animated zoomIn"  ><img src="assets/images/p3_res1.png?v=12" class="v-title" ></div>
+						<div class="p3_save_en animated zoomIn"></div>
+						<div class="jdt"></div>
+					</div>
+					<div class="p3_text2" >
+					</div>
+					
+					
+					<img id="canvas_img" style="position:fixed;width:640px;z-index:9;top:0;opacity: 0;"/>
+				</div>
+			</div>
+			<div class="lag" style="display:none;">
+				<div class="lag_box">
+					<!--<div class="lag_title">语言切换/Language switching</div>-->
+				
+					<div class="lag_text1">请选择语言</br>Please select a language</div>
+					<div class="lag_btn lag_btn1 " onclick="selectLag($(this),'ch')">中文</div>
+					<div class="lag_btn lag_btn2" onclick="selectLag($(this),'en')">English</div>
+
+					
+		
+				</div>
+	
+			</div>
+			<div class="tip" style="display:none;">
+				<div class="lag_box">
+					<div class="lag_title">选择语言</div>
+					<div class="lag_close"></div>
+					<div class="lag_text1">请选择语言</div>
+					<div class="lag_btn lag_btn1 active">中文</div>
+					<div class="lag_btn lag_btn2">English</div>
+
+					<div class="lag_btn3">确定</div>
+					<div class="lag_btn4">取消</div>
+				</div>
+	
+			</div>
+			<div class="res">
+				<p>正在为您分析...</p>
+			</div>
+			<canvas id="my" style="display:none"></canvas>
+			
+		</div>	
+		
+	</body>
+	
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/base64.js"></script>
+	<script src="assets/js/jquery.transit.js"></script>  
+
+	<script src="assets/js/sound.js"></script>
+	<script src="assets/js/preload.js?v=1.0"></script>
+	
+	<script src="assets/js/common.js?v=12.9"></script>
+	<script src="assets/js/app.js?v=81.9111111111"></script>
+	<script src="assets/js/grid.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	
+	<script>
+
+	//	document.write('<script src="./assets/js/app.js?V='+Math.random()+'"><\/script>')
+  //   $(function(){
+	//     var url;
+	// 	url= encodeURIComponent(location.href.split('#')[0]);	
+	// 	$.ajax({
+	// 		type: 'POST',
+	// 		url: 'http://h5.zhmicroera.com/h5public/jsapi.php',
+	// 		data: {'url':url},
+	// 		dataType:'json',
+	// 		success:function(json){ 
+	// 			 wx.config({
+	// 				debug: false,
+	// 				appId: json.appid,
+	// 				timestamp: json.timestamp,
+	// 				nonceStr: json.noncestr,
+	// 				signature: json.signature,
+	// 				jsApiList: [
+	// 					'checkJsApi',
+	// 					'scanQRCode',
+	// 					'hideMenuItems',
+	// 					'onMenuShareAppMessage',
+	// 					'onMenuShareTimeline',
+	// 					'openLocation',
+	// 				]
+	// 			  });
+	// 		},
+	// 		error:function(){
+				
+	// 		}
+	// 	});
+		 
+	// });
+	
+	// wx.error(function (res) {
+	  
+	// });
+	</script>
+
+
+</html>
